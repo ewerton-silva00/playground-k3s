@@ -1,0 +1,6 @@
+---
+- name: Docker | Include task list in play
+  include_tasks: docker.yml
+  tags:
+    - docker
+  when: docker_engine_install | bool
